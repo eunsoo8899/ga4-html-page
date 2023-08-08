@@ -3,7 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stylish Static Page</title>
+    <title>Stylish Static Page with Menu Links</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-W3HSWJGS");
+    </script>
+    <!-- End Google Tag Manager -->
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -74,20 +89,6 @@
         background-color: #0056b3;
       }
     </style>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-W3HSWJGS");
-    </script>
-    <!-- End Google Tag Manager -->
   </head>
   <body>
     <header>
@@ -95,18 +96,22 @@
     </header>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <section>
-        <h2>About Us</h2>
+      <section id="home">
+        <h2>Home</h2>
         <p>메인 섹션</p>
       </section>
-      <section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>회사 소개 내용...</p>
+      </section>
+      <section id="services">
         <h2>Our Services</h2>
         <ul>
           <li>Web Development</li>
@@ -114,9 +119,9 @@
           <li>Digital Marketing</li>
         </ul>
       </section>
-      <section>
-        <h2>Click Event Example</h2>
-        <button id="clickButton">Click Me</button>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>문의하기 내용...</p>
       </section>
     </main>
     <footer>
