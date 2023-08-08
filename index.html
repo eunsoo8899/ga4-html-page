@@ -3,21 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>header > title</title>
-    <!-- Google Tag Manager -->
-    <!-- <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NQGSPTHJ");
-    </script> -->
-    <!-- End Google Tag Manager -->
+    <title>Stylish Static Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #444;
+        overflow: hidden;
+      }
+
+      nav li {
+        float: left;
+      }
+
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      main {
+        padding: 2rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+        padding: 2rem;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -32,63 +88,10 @@
       })(window, document, "script", "dataLayer", "GTM-W3HSWJGS");
     </script>
     <!-- End Google Tag Manager -->
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-      }
-
-      header {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-      }
-
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-        background-color: #444;
-        overflow: hidden;
-      }
-
-      nav li {
-        float: left;
-      }
-
-      nav a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      nav a:hover {
-        background-color: #555;
-      }
-
-      main {
-        padding: 2rem;
-      }
-
-      section {
-        margin-bottom: 2rem;
-      }
-
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <h1>테스트 페이지 (head > body)(h1)</h1>
+      <h1>Stylish Static Page</h1>
     </header>
     <nav>
       <ul>
@@ -111,11 +114,22 @@
           <li>Digital Marketing</li>
         </ul>
       </section>
+      <section>
+        <h2>Click Event Example</h2>
+        <button id="clickButton">Click Me</button>
+      </section>
     </main>
     <footer>
       <p>&copy; 2023 Our Company. All rights reserved.</p>
-      <p>&copy; 2023 Our Company. All rights reserved.</p>
-      <p>&copy; 2023 Our Company. All rights reserved.</p>
     </footer>
+
+    <script>
+      // 클릭 이벤트 예제
+      document
+        .getElementById("clickButton")
+        .addEventListener("click", function () {
+          alert("버튼을 클릭했습니다!");
+        });
+    </script>
   </body>
 </html>
